@@ -1,0 +1,14 @@
+<form {{action "addToDo" model on="submit"}} class="form-inline">
+  <div class="input-group">
+    {{input value=model.message class="form-control"}}
+    <div class="input-group-btn">
+      <button type="submit" class="btn btn-success" disabled={{model.isNotValid}}>Save</button>
+    </div>
+  </div>
+</form>
+
+<ul>
+  {{#each model as |todo|}}
+    {{to-do todo=todo}}
+  {{/each}}
+</ul>
