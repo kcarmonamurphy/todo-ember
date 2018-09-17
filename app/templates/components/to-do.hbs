@@ -1,4 +1,8 @@
-<span>{{todo.message}}</span>
-<span>{{moment-format todo.created 'HH:mm:ss ddd DD-MM-YYYY'}}</span>
+<button class="note-button" {{action "deleteToDo" todo}}>x</button>
+<div class="note-body">
+  <p>{{todo.message}}</p>
+</div>
+<div class="note-meta">
+  <span>{{moment-format todo.created "HH:mm:ss ddd DD-MM-YYYY"}}</span>
+</div>
 
-{{yield}}

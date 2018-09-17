@@ -1,4 +1,8 @@
 <form {{action "addToDo" model on="submit"}}>
-	{{input value=model.message}}
-	<button type="submit" disabled={{isNotValid}}>Save</button>
+	<div class="input">
+		{{input value=model.message placeholder="enter a note"}}
+	</div>
+	<div class="button">
+		<button type="submit" disabled={{isNotValid}}>Save</button>
+	</div>
 </form>

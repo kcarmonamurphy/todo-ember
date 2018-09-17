@@ -17,6 +17,9 @@ export default Controller.extend(StringMethodsMixin, {
 				});
 				todo.set('message', null);
 			}
+		},
+		deleteToDo(todo) {
+			todo.deleteRecord();
 		}
 	}
 });

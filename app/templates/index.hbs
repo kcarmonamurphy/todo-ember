@@ -5,6 +5,9 @@
 
 <ul>
   {{#each model as |todo|}}
-    {{to-do todo=todo}}
+    {{to-do
+      todo=todo
+      deleteToDo=(action "deleteToDo")
+    }}
   {{/each}}
 </ul>
