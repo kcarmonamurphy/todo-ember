@@ -9,13 +9,16 @@ export default Controller.extend(StringMethodsMixin, {
 	actions: {
 		addToDo(todo) {
 			let message = todo.get('message');
+			let priority = todo.get('priority');
 
 			if (!this.isBlank(message)) {
 				this.get('store').createRecord('todo', {
 					message: message,
+					priority: priority,
 					created: new Date()
 				});
 				todo.set('message', null);
+				todo.set('priority', null);
 			}
 		},
 		deleteToDo(todo) {

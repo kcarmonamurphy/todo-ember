@@ -3,6 +3,10 @@
   addToDo=(action "addToDo")
 }}
 
+{{priority-counter
+  model=model
+}}
+
 <ul>
   {{#each model as |todo|}}
     {{to-do

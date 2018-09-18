@@ -44,6 +44,15 @@ p {
 	font-size: 20px;
 }
 
+div.priorities-container {
+	margin: 10px 0;
+}
+
+div.priority-block {
+	margin:10px;
+	background-color:#ddd;
+}
+
 div.todo-note {
 	padding: 10px;
 	border: 1px solid grey;
@@ -62,6 +71,10 @@ div.note-meta > span {
 	float: right;
 }
 
+div.note-priority > span {
+	float: left;
+}
+
 button.note-button {
 	float: right;
 	margin-left: 20px;
@@ -71,16 +84,20 @@ form {
 	display: flex;
 	margin: 15px 0;
 
-	.input {
-		flex: 1;
+	.note-input {
+		flex:2;
+	}
 
-		input {
-			width: 100%;
-			font-size:23px;
-			border: 1px solid black;
-			border-right: 0;
-			padding:10px;
-		}
+	.priority-input {
+		flex:1;
+	}
+
+	input {
+		width: 100%;
+		font-size:23px;
+		border: 1px solid black;
+		border-right: 0;
+		padding:10px;
 	}
 
 	.button {

@@ -1,8 +1,11 @@
 <form {{action "addToDo" model on="submit"}}>
-	<div class="input">
-		{{input value=model.message placeholder="enter a note"}}
-	</div>
-	<div class="button">
-		<button type="submit" disabled={{isNotValid}}>Save</button>
-	</div>
+  <div class="note-input">
+    {{input value=model.message placeholder="enter a note"}}
+  </div>
+  <div class="priority-input">
+  	{{input pattern="^[0-9]*$" value=model.priority placeholder="priority"}}
+  </div>
+  <div class="button">
+    <button type="submit" disabled={{isNotValid}}>Save</button>
+  </div>
 </form>
