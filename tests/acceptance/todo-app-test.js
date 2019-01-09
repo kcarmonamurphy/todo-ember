@@ -6,16 +6,16 @@ module('Acceptance | basic todo functionality', function(hooks) {
   setupApplicationTest(hooks);
 
   test('show index page as default', async function(assert) {
-	await visit('/');
+    await visit('/');
     assert.equal(currentURL(), '/', 'shouldn\'t redirect');
   });
 
-  test('can add new todo', async function(assert) {
+  test('can add new todo', async function() {
   });
 
-  test('can delete todo', async function(assert) {
+  test('can delete todo', async function() {
   });
 
-  test('shows existing todos', async function(assert) {
+  test('shows existing todos', async function() {
   });
 });
