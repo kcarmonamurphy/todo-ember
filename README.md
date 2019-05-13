@@ -6,7 +6,7 @@ It's a single page application (SPA) which allows a user to add, view, and delet
 
 ### Technologies ###
 
-- Ember version 3.4.2
+- Ember version 3.9.0
 
 ### Running ###
 
